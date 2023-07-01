@@ -52,16 +52,16 @@ methods: {
         }
     }
 },
-// mounted()
-// {
+mounted()
+{
 
-// let user=localStorage.getItem('user-info');
-// if (user)
-// {
-//             this.$router.push({ name: 'Home' })
+let user=localStorage.getItem('user-info');
+if (user)
+{
+            this.$router.push({ name: 'Home' })
 
-// }
-// }
+}
+}
 
 }
 </script>

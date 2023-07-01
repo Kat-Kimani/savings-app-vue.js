@@ -16,7 +16,7 @@
 
 <script>
 import axios from 'axios'
-// import { defineComponent } from '@vue/composition-api'
+
 
 
 export default {
