@@ -18,7 +18,7 @@
 
 <script>
 
-
+import axios from 'axios'
 export default {
     name: 'SignUp',
     data()
@@ -31,9 +31,21 @@ export default {
     }
 },
 methods: {
-    signUp()
+   async signUp()
     {
-        console.warn("signup", this.name, this.email, this.password )
+        // console.warn("signup", this.name, this.email, this.password )
+        let result = await axios.post("http://localhost:3000/savers",{
+            name: this.name,
+            email:this.email,
+            password: this.password
+
+        });
+        console.warn(result);
+        if (result.status==201){
+
+            alert("sign-up successful");
+            localStorage.setItem("user-info", JSON.stringify(result.data))
+        }
     }
 }
 
