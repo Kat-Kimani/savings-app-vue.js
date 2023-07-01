@@ -3,7 +3,7 @@
 <a href="#"> Home</a>
     <a href="#"> Add Saver</a>
     <a href="#"> Update Saver</a>
-    <a href="#"> Logout</a>
+    <a v-on:click="logout" href="#"> Logout</a>
 
 </div>
 
@@ -13,7 +13,15 @@
 
 
 export default {
-    name:'Header'
+    name:'Header',
+    methods:{
+        logout()
+        {
+            // console.warn("logout")
+            localStorage.clear();
+            this.$router.push({name:'Login'})
+        }
+    }
 }
 </script>
 
