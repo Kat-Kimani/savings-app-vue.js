@@ -16,10 +16,26 @@
 
 
 <style>
+h1{
+  color: rgb(32 195 32);
+  font-size: 20;
+  font-weight: bold;
+  margin-top: 20px; 
+  margin-bottom: 10px;
+  text-align: center;
+
+}
 body{
 padding: 0;
 margin: 0;
 
+}
+
+.register,
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .register input, .login input  {
 
@@ -30,18 +46,20 @@ margin: 0;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px;
-  border: 1px solid skyblue;
-  border-radius: 2px;
+  
+  border: 2px solid rgb(27, 162, 27);
+  border-radius: 4px;
 }
 
 .register button, .login button {
   width: 320px;
   height: 40px;
-  border: 1px solid skyblue;
-  background: skyblue;
-  color: white;
+  border: 2px solid green;
+  background: rgb(175, 239, 175);
+  color: black;
   cursor: pointer;
+  border-radius: 4px;
+ 
 
 }
 </style>
@@ -63,11 +81,11 @@ margin: 0;
 header {
   line-height: 1.5;
 }
-
+/* 
 .logo {
   display: block;
   margin: 0 auto 2rem;
-}
+} */
 
 @media (min-width: 1024px) {
   header {

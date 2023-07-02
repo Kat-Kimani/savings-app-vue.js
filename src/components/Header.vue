@@ -1,8 +1,8 @@
 <template>
 <div class="nav">
-<a href="#"> Home</a>
-    <a href="#"> Add Saver</a>
-    <a href="#"> Update Saver</a>
+<router-link to="/" href="#"> Home</router-link>
+    <router-link to="/add" href="#"> Add Saver</router-link>
+    <router-link to="/update"  href="#"> Update Saver</router-link>
     <a v-on:click="logout" href="#"> Logout</a>
 
 </div>
@@ -35,6 +35,7 @@ overflow: hidden;
 .nav a{
     float: left;
     font-size: 17px;
+    font-weight: bold;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
