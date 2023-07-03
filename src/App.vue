@@ -1,44 +1,36 @@
-
 <template>
- 
-<router-view/>
-
-
+  <router-view />
 </template>
 
-
 <script setup>
-
 // import SignUp from './components/SignUp.vue'
-
-
 </script>
-
 
 <style>
 h1{
   color: rgb(32 195 32);
   font-size: 20;
   font-weight: bold;
-  margin-top: 20px; 
+  margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
-
 }
-body{
-padding: 0;
-margin: 0;
 
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 .register,
-.login {
+.login .addtrans {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.register input, .login input  {
-
+.register input,
+.login input,
+.addtrans input {
   width: 300px;
   height: 40px;
   padding-left: 20px;
@@ -46,12 +38,14 @@ margin: 0;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  
+
   border: 2px solid rgb(27, 162, 27);
   border-radius: 4px;
 }
 
-.register button, .login button {
+.register button,
+.login button,
+.addtrans button {
   width: 320px;
   height: 40px;
   border: 2px solid green;
@@ -59,23 +53,10 @@ margin: 0;
   color: black;
   cursor: pointer;
   border-radius: 4px;
- 
-
 }
+
+
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <style scoped>
 header {

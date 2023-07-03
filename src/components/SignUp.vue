@@ -37,7 +37,7 @@
         required
         minlength="2"
       />
-      <button v-on:click="signUp">Sign Up</button>
+      <button v-on:click="signUp">Create New Account</button>
       <p>
         <router-link to="/Login"> Login</router-link>
       </p>
